@@ -150,17 +150,22 @@ nav {
       display: flex;
     }
 
-    #main_nav {
-      display: flex;
-      justify-content: flex-end;
+    #logo {
+      text-align: left;
+      width: 50%;
     }
 
-    #main_nav a {
-        padding: 10px 2%;
-        background: #ffdddd;
-        margin: 10px;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        width: 200px;
+    section {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    section > div {
+      flex-grow: 1;
+    }
+
+    #main_content > div:nth-child(1) {
+      flex-grow: 2;
+      width: 60%;
     }
 }
